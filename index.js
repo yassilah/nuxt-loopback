@@ -5,14 +5,12 @@ import loopback from 'loopback'
 import boot from 'loopback-boot'
 import explorer from 'loopback-component-explorer'
 import bodyParser from 'body-parser'
-
 import config from './nuxt.config'
+
+import { apiURL, host, port } from './config.json'
 
 /* Set API */
 const api = loopback(), app = express()
-const host = process.env.HOST || 'localhost'
-const port = process.env.PORT || 3000
-const apiURL = '/api'
 
 /* Build Nuxt */
 config.dev = !(process.env.NODE_ENV === 'production')

@@ -5,7 +5,7 @@
     "ACL": 1,
     "RoleMapping": 1,
     "Role": 1,
-    "Test": 2
+    "Test": 9
   },
   "models": {
     "User": {},
@@ -14,7 +14,9 @@
     "RoleMapping": {},
     "Role": {},
     "Test": {
-      "1": "{\"name\":\"first test\",\"price\":3,\"id\":1}"
+      "6": "{\"name\":\"First Test\",\"price\":3,\"id\":6}",
+      "7": "{\"name\":\"Second Test\",\"price\":4,\"id\":7}",
+      "8": "{\"name\":\"Third Test\",\"price\":34,\"id\":8}"
     }
   }
 }

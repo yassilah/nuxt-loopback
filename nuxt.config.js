@@ -1,7 +1,6 @@
+const apiURL = require('./config.json').apiURL
+
 module.exports = {
-  /*
-  ** Headers of the page
-  */
   head: {
     title: 'starter',
     meta: [
@@ -13,19 +12,19 @@ module.exports = {
     { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
-  /*
-  ** Global CSS
-  */
   css: ['~/assets/css/main.css'],
   srcDir: 'client',
-  /*
-  ** Add axios globally
-  */
+  modules: [
+  '@nuxtjs/bulma',
+  '@nuxtjs/font-awesome',
+  [
+  '@nuxtjs/axios', {
+    baseURL: `http://${process.env.HOST || 'localhost'}:${process.env.PORT || 3000}${apiURL}`,
+    browserBaseURL: `http://${process.env.HOST || 'localhost'}:${process.env.PORT || 3000}${apiURL}`
+  }
+  ]
+  ],
   build: {
-    vendor: ['axios'],
-    /*
-    ** Run ESLINT on save
-    */
     extend (config, ctx) {
       if (ctx.isClient) {
         config.module.rules.push({
