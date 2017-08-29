@@ -1,6 +1,6 @@
 # nuxt-loopback
 
-> Nuxt.js + Loopback template
+> Nuxt.js + LoopBack template
 
 ## Build Setup
 
@@ -15,8 +15,16 @@ $ npm run dev
 $ npm start
 ```
 
-For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
+Checkout the [Nuxt.js](https://github.com/nuxt/nuxt.js) and the [LoopBack](http://loopback.io/doc/en/lb3/index.html) for detailed explanations.
 
-## Backpack
+# Configuration
 
-We use [backpack](https://github.com/palmerhq/backpack) to watch and build the application, so you can use the latest ES6 features (module syntax, async/await, etc.).
+You can modify the config.json file in the root folder to change your default API base url, host and port.
+
+```
+{
+    "apiURL": "/api",
+    "host": "localhost",
+    "port": "3000"
+}
+```
