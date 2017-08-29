@@ -8,9 +8,11 @@ module.exports = {
   extends: 'standard',
   // required to lint *.vue files
   plugins: [
-    'html'
+  'html'
   ],
   // add your custom rules here
-  rules: {},
+  rules: {
+    indent: 0
+  },
   globals: {}
 }

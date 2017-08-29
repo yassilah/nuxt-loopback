@@ -1,4 +1,4 @@
-const apiURL = require('./config.json').apiURL
+const { apiURL } = require('./config.json')
 
 module.exports = {
   head: {
@@ -6,7 +6,7 @@ module.exports = {
     meta: [
     { charset: 'utf-8' },
     { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-    { hid: 'description', name: 'description', content: 'Nuxt.js project' }
+    { hid: 'description', name: 'description', content: 'Nuxt + Loopback' }
     ],
     link: [
     { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -14,6 +14,7 @@ module.exports = {
   },
   css: ['~/assets/css/main.css'],
   srcDir: 'client',
+  plugins: [],
   modules: [
   '@nuxtjs/bulma',
   '@nuxtjs/font-awesome',

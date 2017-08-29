@@ -1,22 +1,16 @@
 {
   "ids": {
-    "User": 1,
-    "AccessToken": 1,
-    "ACL": 1,
-    "RoleMapping": 1,
-    "Role": 1,
-    "Test": 9
+    "User": 0,
+    "AccessToken": 0,
+    "ACL": 0,
+    "RoleMapping": 0,
+    "Role": 0
   },
   "models": {
     "User": {},
     "AccessToken": {},
     "ACL": {},
     "RoleMapping": {},
-    "Role": {},
-    "Test": {
-      "6": "{\"name\":\"First Test\",\"price\":3,\"id\":6}",
-      "7": "{\"name\":\"Second Test\",\"price\":4,\"id\":7}",
-      "8": "{\"name\":\"Third Test\",\"price\":34,\"id\":8}"
-    }
+    "Role": {}
   }
 }
