@@ -1,16 +1,21 @@
 {
   "ids": {
-    "User": 0,
-    "AccessToken": 0,
-    "ACL": 0,
-    "RoleMapping": 0,
-    "Role": 0
+    "User": 2,
+    "AccessToken": 2,
+    "ACL": 1,
+    "RoleMapping": 1,
+    "Role": 1,
+    "test": 2
   },
   "models": {
     "User": {},
-    "AccessToken": {},
+    "Test": {},
     "ACL": {},
     "RoleMapping": {},
-    "Role": {}
+    "Role": {},
+    "AccessToken": {},
+    "test": {
+      "1": "{\"name\":\"Test #1\",\"id\":1}"
+    }
   }
 }
