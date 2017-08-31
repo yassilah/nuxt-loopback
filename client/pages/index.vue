@@ -5,7 +5,6 @@
         <h2 class="subtitle">Nuxt.js + LoopBack</h2>
       </figure>
       <h1 class="title">Hello!</h1>
-      <p>{{$store.token}}</p>
       <a href="/api/explorer" target="_blank" class="button is-primary">Go to the API explorer</a>
     </section>
 </template>
